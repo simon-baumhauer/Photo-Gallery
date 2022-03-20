@@ -1,0 +1,72 @@
+h1 {
+    text-align: center;
+    margin: 60px 0;
+    font-family: 'Dancing Script';
+    font-size: 60px;
+}
+
+.img_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 0;
+    position: relative;
+    min-width: 100wh;
+}
+
+.images {
+    height: 350px;
+    max-width: 520px;
+    margin: 10px;
+    object-fit: cover;
+    transition: 22ms;
+    transition-timing-function: ease-in-out;
+}
+
+.images:hover {
+    height: 355px;
+    max-width: 525px;
+    margin: 7.5px;
+    box-shadow: 0px 0px 20px black;
+}
+
+.fullscreenDiv {
+    width: 100%;
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fullscreenDiv img {
+    max-width: 100%;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.arrows {
+    width: 30px;
+    padding: 40px;
+    cursor: pointer;
+}
+
+.arrowleft {
+    position: fixed;
+    left: 0;
+    top: 40%;
+}
+
+.arrowright {
+    position: fixed;
+    right: 0;
+    top: 40%;
+}
